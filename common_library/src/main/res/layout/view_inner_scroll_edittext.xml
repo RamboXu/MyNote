@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.e.common.widget.InnerScrollView
+        android:id="@+id/innerScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top|left"
+            android:minLines="4"
+            android:paddingBottom="@dimen/size_dp_10"
+            android:paddingLeft="@dimen/size_dp_10"
+            android:paddingRight="@dimen/size_dp_10"
+            android:paddingTop="@dimen/size_dp_5"
+            android:textColor="#474747"
+            android:textColorHint="#d3d3d3"
+            android:textSize="@dimen/size_sp_16" />
+    </com.e.common.widget.InnerScrollView>
+
+</LinearLayout>

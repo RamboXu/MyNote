@@ -1,0 +1,253 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- 自定义alert dialog -->
+    <style name="custome_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="food_calculation_dialog" parent="@style/custome_dialog">
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="recordDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="chatMoreFunctionLayout">
+        <item name="android:layout_width">@dimen/size_dp_60</item>
+        <item name="android:layout_height">@dimen/size_dp_60</item>
+        <item name="android:gravity">center</item>
+        <item name="effectColor_bgNormalColor">#aeb1b4</item>
+        <item name="effectColor_is_just_border">true</item>
+        <item name="effectColor_radius">@dimen/size_dp_5</item>
+    </style>
+
+    <style name="chatMoreFunctionImageButton">
+        <item name="android:layout_width">@dimen/size_dp_30</item>
+        <item name="android:layout_height">@dimen/size_dp_30</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="chatMoreFunctionImageButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/size_dp_5</item>
+        <item name="android:textSize">@dimen/size_sp_13</item>
+    </style>
+
+    <style name="Widget.GifView" parent="@android:style/Widget"></style>
+
+    <style name="documentView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_sp_16</item>
+    </style>
+
+    <style name="itemLayout_personal" parent="itemLayout_normal">
+        <item name="itemLayout_bottom_line_margin">@dimen/size_dp_15</item>
+    </style>
+
+    <!-- 3.3版本 -->
+    <style name="itemLayout_personal33" parent="itemLayout_normal">
+        <item name="itemLayout_bottom_line_margin">@dimen/size_dp_38</item>
+    </style>
+
+    <style name="itemLayout_doctor" parent="itemLayout_personal">
+        <item name="effectColor_bgPressedColor">@color/item_press</item>
+    </style>
+
+    <style name="itemLayout_normal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_dp_50</item>
+        <item name="effectColor_bgNormalColor">@color/white</item>
+        <item name="effectColor_bgPressedColor">@color/item_press</item>
+        <item name="android:paddingLeft">@dimen/size_dp_15</item>
+        <item name="itemLayout_left1_textColor">@color/c_474747</item>
+        <item name="itemLayout_line_bottom">true</item>
+        <item name="itemLayout_line_color">@color/divider_color</item>
+    </style>
+
+
+    <!-- 从底部向上弹出的动画 -->
+    <style name="AnimBottomStyle" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_bottom</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/shrink_from_top</item>
+    </style>
+
+    <!-- 标题和下方内容的margin, text color and text size ..-->
+    <style name="titleContent_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/c_666</item>
+        <item name="android:textSize">@dimen/size_sp_16</item>
+        <item name="android:layout_marginBottom">@dimen/size_dp_6</item>
+        <item name="android:layout_marginLeft">@dimen/size_dp_15</item>
+    </style>
+
+    <style name="NotificationContent">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="NotificationTitle">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="BottomRight">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+    </style>
+
+    <style name="Center">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="CenterBottom">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="CenterTop">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="CenterTopLeft">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="CenterTopRight">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="AnimLineIndicator">
+        <item name="ci_width">@dimen/size_dp_10</item>
+        <item name="ci_height">@dimen/size_dp_4</item>
+        <item name="ci_margin">@dimen/size_dp_6</item>
+        <item name="ci_animator">@animator/translation_and_rotate</item>
+        <item name="ci_drawable">@drawable/balck_radius_square</item>
+        <item name="android:layout_height">@dimen/size_dp_30</item>
+        <item name="android:padding">@dimen/size_dp_10</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+</resources>

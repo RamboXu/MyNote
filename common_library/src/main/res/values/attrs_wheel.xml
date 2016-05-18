@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Wheel">
+        <attr name="wheel_textSize" format="dimension" />
+        <attr name="wheel_label" format="string" />
+        <attr name="wheel_textColor" format="color|reference" />
+        <attr name="wheel_textSelectedColor" format="color|reference" />
+        <attr name="wheel_cyclic" format="boolean" />
+        <attr name="wheel_bold" format="boolean" />
+    </declare-styleable>
+
+</resources>

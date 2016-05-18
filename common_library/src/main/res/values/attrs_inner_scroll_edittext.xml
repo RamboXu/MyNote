@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="InnerScrollEditText">
+        <attr name="edittext_hint" format="string" />
+
+    </declare-styleable>
+
+</resources>

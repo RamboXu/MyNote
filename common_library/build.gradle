@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+apply plugin: 'android-apt'
+def AAVersion = '3.3'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okio:okio:1.5.0'
+    compile 'org.androidannotations:androidannotations:3.3.2'
+    compile files('libs/tbs_sdk_v1.4.1.1109_25433_obfs_20151027_212539.jar')
+    compile 'joda-time:joda-time:2.9.1'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'com.android.support:recyclerview-v7:24.0.0-alpha1'
+    compile 'com.android.support:cardview-v7:24.0.0-alpha1'
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}
+
+apt {
+    arguments {
+        androidManifestFile variant.outputs[0].processResources.manifestFile
+        resourcePackageName 'com.e.common'
+    }
+}

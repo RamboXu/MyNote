@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--医生端和患者端公用的聊天输入bar-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_chat_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chat_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/size_dp_5"
+        android:paddingTop="@dimen/size_dp_5">
+
+        <Button
+            android:id="@+id/btn_voice"
+            android:layout_width="@dimen/size_dp_33"
+            android:layout_height="@dimen/size_dp_33"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_dp_10"
+            android:background="@drawable/chat_btn_voice"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btn_keyboard"
+            android:layout_width="@dimen/size_dp_33"
+            android:layout_height="@dimen/size_dp_33"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_dp_10"
+            android:background="@drawable/chat_btn_keyboard"
+            android:onClick="onClick"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_dp_10"
+            android:layout_toLeftOf="@+id/ll_more"
+            android:layout_toRightOf="@id/btn_voice"
+            android:background="@drawable/bg_input"
+            android:minHeight="@dimen/size_dp_40"
+            android:paddingLeft="@dimen/size_dp_10"
+            android:paddingRight="@dimen/size_dp_10"
+            android:textSize="@dimen/size_sp_18" />
+
+
+        <TextView
+            android:id="@+id/btn_press_to_voice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_dp_10"
+            android:layout_toLeftOf="@+id/ll_more"
+            android:layout_toRightOf="@id/btn_keyboard"
+            android:background="@drawable/btn_chat_record"
+            android:gravity="center"
+            android:minHeight="@dimen/size_dp_40"
+            android:text="按住 说话"
+            android:textColor="#696969"
+            android:textSize="@dimen/size_sp_18"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/size_dp_10"
+            android:layout_marginRight="@dimen/size_dp_10"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_more"
+                android:layout_width="@dimen/size_dp_33"
+                android:layout_height="@dimen/size_dp_33"
+                android:layout_gravity=""
+                android:background="@drawable/chat_btn_more" />
+
+            <com.e.common.widget.effect.button.EffectColorButton
+                android:id="@+id/btn_send"
+                android:layout_width="60dip"
+                android:layout_height="@dimen/size_dp_33"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_sp_17"
+                android:visibility="gone"
+                app:effectColor_bgNormalColor="@color/c_chat_send_button_normal"
+                app:effectColor_bgPressedColor="@color/c_chat_send_button_pressed"
+                app:effectColor_radius="@dimen/size_dp_3" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/include_line" />
+
+</LinearLayout>

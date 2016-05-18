@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BannerView">
+        <!--圆点默认颜色-->
+        <attr name="bannerPageIndicatorDefaultColor" format="color|reference" />
+        <!--圆点边框颜色-->
+        <attr name="bannerPageIndicatorStrokeColor" format="color|reference" />
+        <!--圆点选中颜色-->
+        <attr name="bannerPageIndicatorSelectedColor" format="color|reference" />
+        <!--显示banner的宽高比率,默认banner宽度撑满屏幕宽度,高度为屏幕宽度的1/4-->
+        <attr name="bannerAspectRatio" format="float"/>
+        <!--banner数据为空,显示的图片-->
+        <attr name="bannerEmptyDrawableResource" format="reference"/>
+    </declare-styleable>
+
+</resources>

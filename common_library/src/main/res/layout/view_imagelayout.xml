@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.e.common.widget.FlowLayout
+        android:id="@+id/ll_imgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_upload_pic"
+            android:layout_width="@dimen/size_dp_60"
+            android:layout_height="@dimen/size_dp_73">
+
+            <com.e.common.widget.effect.layout.EffectColorLinearLayout
+                android:id="@+id/effectBtn_upload_pic"
+                android:layout_width="@dimen/size_dp_60"
+                android:layout_height="@dimen/size_dp_60"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/size_dp_12"
+                app:effectColor_bgNormalColor="@color/white"
+                app:effectColor_bgPressedColor="@color/c_eee"
+                app:effectColor_is_border="true">
+
+                <com.e.common.widget.image.ImageLoaderView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/icon_plus" />
+            </com.e.common.widget.effect.layout.EffectColorLinearLayout>
+
+        </RelativeLayout>
+
+    </com.e.common.widget.FlowLayout>
+
+    <TextView
+        android:id="@+id/text_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_dp_20"
+        android:layout_marginRight="@dimen/size_dp_20"
+        android:textColor="@color/c_666"
+        android:textSize="@dimen/size_sp_18" />
+</LinearLayout>

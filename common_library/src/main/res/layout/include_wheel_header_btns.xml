@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_wheelView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_dp_45"
+    android:layout_above="@+id/ll_wheelView"
+    android:background="#f2f0f1">
+
+    <com.e.common.widget.effect.button.EffectColorButton
+        android:id="@+id/effectBtn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_dp_10"
+        android:paddingRight="@dimen/size_dp_10"
+        android:text="取消"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/size_sp_18"
+        app:effectColor_bgNormalColor="@android:color/transparent"
+        app:effectColor_bgPressedColor="@color/c_999" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/c_474747"
+        android:textSize="@dimen/size_sp_18" />
+
+    <com.e.common.widget.effect.button.EffectColorButton
+        android:id="@+id/effectBtn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_dp_10"
+        android:paddingRight="@dimen/size_dp_10"
+        android:text="确定"
+        android:textColor="@color/theme_color"
+        android:textSize="@dimen/size_sp_18"
+        app:effectColor_bgNormalColor="@android:color/transparent"
+        app:effectColor_bgPressedColor="@color/c_999" />
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomeActionBar">
+        <attr name="actionbar_textColor" format="reference|color" />
+        <attr name="actionbar_needBootomLine" format="boolean" />
+        <!--是否显示进度-->
+        <attr name="actionbar_showLoading" format="boolean"/>
+    </declare-styleable>
+
+</resources>

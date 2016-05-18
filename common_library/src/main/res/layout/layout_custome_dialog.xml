@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/xml_dialog_bg">
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_text_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_dp_10"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="@dimen/size_sp_20" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/id_text_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/size_dp_15"
+                android:layout_marginRight="@dimen/size_dp_15"
+                android:layout_marginTop="@dimen/size_dp_8"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="@dimen/size_sp_17" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_btns"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/id_divider"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/divider_size"
+                android:background="#bfc1be" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_dp_50"
+                android:layout_below="@id/id_divider"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/id_btn_cancel"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/size_dp_50"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_btn_dialog_left"
+                    android:gravity="center"
+                    android:text="@string/s_dialog_btn_cancel"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/size_sp_18" />
+
+                <TextView
+                    android:id="@+id/id_btn_ok"
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/size_dp_50"
+                    android:layout_weight="1"
+                    android:background="@drawable/xml_btn_dialog_right"
+                    android:gravity="center"
+                    android:text="@string/s_dialog_btn_ok"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/size_sp_18" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/id_btn_divider"
+                android:layout_width="@dimen/divider_size"
+                android:layout_height="@dimen/size_dp_50"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="0dp"
+                android:background="#bfc1be" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

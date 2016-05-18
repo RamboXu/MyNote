@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="data_exception">数据异常，请稍后再试</string>
+    <string name="client_exception">网络连接失败，请稍后再试</string>
+    <string name="server_exception">服务不可用，请稍后再试</string>
+    <string name="network_invalid">当前设备网络不可用，请打开网络后再试</string>
+    <string name="connect_timeout">连接服务器超时，请稍后再试</string>
+    <string name="loading_txt">请稍等.</string>
+    <string name="load_more_text">正在加载...</string>
+    <string name="net_type">当前网络连接为: %s</string>
+    <string name="server_unavailable">服务器响应失败</string>
+    <string name="s_dialog_btn_ok">确定</string>
+    <string name="s_dialog_btn_cancel">取消</string>
+    <string name="s_dialog_title_tip">提醒</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_send">发送</string>
+
+    <string name="net_tip_no_net">请确定您设备是否连接到互联网</string>
+    <string name="net_tip_not_good">网络不给力，请稍后再试</string>
+    <string name="net_tip_server_wrong">服务器异常，请稍后再试</string>
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+
+    <string name="image_size_40">_40</string>
+    <string name="image_size_80">_80</string>
+    <string name="image_size_120">_120</string>
+    <string name="image_size_180">_180</string>
+    <string name="image_size_240">_240</string>
+</resources>

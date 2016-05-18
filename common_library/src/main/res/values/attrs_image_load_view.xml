@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ImageLoaderAttr">
+        <!-- imagelayout -->
+        <attr name="imageLoader_round" format="boolean" />
+        <attr name="imageLoader_roundCorner" format="boolean" />
+        <!-- 设定图片宽高比例，默认以宽为基准作调整 -->
+        <attr name="imageLoader_width_height_rate" format="float" />
+        <attr name="imageLoader_click2preview" format="boolean" />
+        <attr name="imageLoader_empty" format="reference" />
+        <attr name="imageLoader_loading" format="reference" />
+        <attr name="imageLoader_fail" format="reference" />
+        <attr name="imageLoader_roundCorner_size" format="integer" />
+        <attr name="imageLoader_isFadeIn" format="boolean" />
+        <attr name="imageLoader_size" format="reference|string" />
+    </declare-styleable>
+    
+</resources>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_nav"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/actionbar_color">
+
+    <include layout="@layout/include_btn_left" />
+
+    <LinearLayout
+        android:id="@+id/ll_nav_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/nav_title"
+                android:textSize="@dimen/size_sp_18" />
+
+            <TextView
+                android:id="@+id/text_backup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_dp__1"
+                android:textColor="@color/nav_title"
+                android:textSize="@dimen/size_sp_16"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:id="@+id/img_nav_center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_dp_25"
+            android:layout_marginLeft="@dimen/size_dp_7"
+            android:scaleType="fitCenter"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <include layout="@layout/include_btn_right" />
+
+    <View
+        android:id="@+id/actionbar_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_size"
+        android:layout_alignParentBottom="true"
+        android:background="@color/c_e0e0e0" />
+
+</RelativeLayout>

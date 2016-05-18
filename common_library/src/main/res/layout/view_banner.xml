@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--banner-->
+    <RelativeLayout
+        android:id="@+id/layout_banner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_dp_120">
+
+        <!--<com.e.common.widget.banner.AutoScrollViewPager-->
+        <!--android:id="@+id/pager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:id="@+id/iv_empty_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_474b5e"
+            android:scaleType="centerCrop" />
+
+        <com.e.common.widget.viewpager.InfiniteIndicator
+            android:id="@+id/bannerIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:indicator_type="indicator_anim_circle" />
+    </RelativeLayout>
+</LinearLayout>

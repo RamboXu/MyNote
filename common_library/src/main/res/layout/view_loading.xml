@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.e.common.widget.effect.layout.EffectColorLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_dp_14"
+        android:paddingLeft="@dimen/size_dp_23"
+        android:paddingRight="@dimen/size_dp_15"
+        android:paddingTop="@dimen/size_dp_21"
+        app:effectColor_bgNormalColor="#bbffffff"
+        app:effectColor_bgPressedColor="#bbffffff"
+        app:effectColor_radius="@dimen/size_dp_5">
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:id="@+id/img_loading"
+            android:layout_width="@dimen/size_dp_40"
+            android:layout_height="@dimen/size_dp_40"
+            android:layout_marginLeft="@dimen/size_dp_6"
+            android:background="@drawable/loading" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_dp_5"
+            android:text="请稍等..."
+            android:textColor="@color/c_474747"
+            android:textSize="@dimen/size_sp_16" />
+    </com.e.common.widget.effect.layout.EffectColorLinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <com.e.common.widget.effect.layout.EffectColorLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/size_dp_55"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/size_dp_15"
+        app:effectColor_clickable="false">
+
+        <CheckBox
+            android:id="@+id/check_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size_dp_35"
+            android:button="@drawable/choose_checkbox_bg"
+            android:clickable="false"
+            android:paddingLeft="@dimen/size_dp_15"
+            android:paddingRight="@dimen/size_dp_15"
+            android:textColor="@color/c_474747"
+            android:textSize="@dimen/size_sp_16" />
+
+        <TextView
+            android:id="@+id/text_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="@dimen/size_sp_17" />
+    </com.e.common.widget.effect.layout.EffectColorLinearLayout>
+
+    <include layout="@layout/include_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/size_dp_15"/>
+
+</LinearLayout>

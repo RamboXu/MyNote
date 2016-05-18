@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.e.common.widget.effect.layout.EffectColorRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:effectColor_bgNormalColor="#99000000"
+    app:effectColor_bgPressedColor="#99000000"
+    app:effectColor_radius="@dimen/size_dp_5">
+
+    <LinearLayout
+        android:id="@+id/ll_recording"
+        android:layout_width="@dimen/size_dp_160"
+        android:layout_height="@dimen/size_dp_150"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:id="@+id/img_recording_anim"
+            android:layout_width="@dimen/size_dp_100"
+            android:layout_height="@dimen/size_dp_15"
+            android:src="@drawable/record_volume_1" />
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:layout_width="@dimen/size_dp_40"
+            android:layout_height="@dimen/size_dp_60"
+            android:layout_marginTop="@dimen/size_dp_10"
+            android:src="@drawable/record_mic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_dp_15"
+            android:text="手指上滑，取消发送"
+            android:textColor="#f5f5f5"
+            android:textSize="@dimen/size_sp_14" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_cancel_tip"
+        android:layout_width="@dimen/size_dp_160"
+        android:layout_height="@dimen/size_dp_150"
+        android:visibility="gone">
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:layout_width="@dimen/size_dp_60"
+            android:layout_height="@dimen/size_dp_50"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_dp_40"
+            android:src="@drawable/icon_cancel_record" />
+
+        <com.e.common.widget.effect.button.EffectColorButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_dp_8"
+            android:layout_marginLeft="@dimen/size_dp_8"
+            android:layout_marginRight="@dimen/size_dp_8"
+            android:gravity="center"
+            android:padding="@dimen/size_dp_5"
+            android:text="松开手指，取消发送"
+            android:textColor="@color/c_f5f5f5"
+            android:textSize="@dimen/size_sp_14"
+            app:effectColor_bgNormalColor="#ea5d34"
+            app:effectColor_bgPressedColor="#ea5d34"
+            app:effectColor_radius="@dimen/size_dp_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_time_too_short"
+        android:layout_width="@dimen/size_dp_160"
+        android:layout_height="@dimen/size_dp_150"
+        android:visibility="gone">
+
+        <com.e.common.widget.image.ImageLoaderView
+            android:layout_width="@dimen/size_dp_60"
+            android:layout_height="@dimen/size_dp_60"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/size_dp_40"
+            android:src="@drawable/voice_alert" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/size_dp_8"
+            android:layout_marginLeft="@dimen/size_dp_8"
+            android:layout_marginRight="@dimen/size_dp_8"
+            android:gravity="center"
+            android:padding="@dimen/size_dp_5"
+            android:text="说话时间太短了"
+            android:textColor="#f5f5f5"
+            android:textSize="@dimen/size_sp_14" />
+    </RelativeLayout>
+
+</com.e.common.widget.effect.layout.EffectColorRelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.e.common.widget.effect.layout.EffectColorLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_nav_left"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerVertical="true"
+    android:clickable="true"
+    android:gravity="center"
+    android:minWidth="@dimen/size_dp_50"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/size_dp_10"
+    android:paddingRight="@dimen/size_dp_10"
+    app:effectColor_bgNormalColor="@color/transparent"
+    app:effectColor_bgPressedColor="@color/nav_side_pressed">
+
+    <com.e.common.widget.image.ImageLoaderView
+        android:id="@+id/img_nav_left"
+        android:layout_width="@dimen/size_dp_15"
+        android:layout_height="@dimen/size_dp_20"
+        android:layout_marginRight="@dimen/size_dp_5"
+        android:scaleType="fitCenter"
+        android:src="@drawable/btn_back" />
+
+    <TextView
+        android:id="@+id/text_nav_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="@color/nav_side_text_color"
+        android:textSize="@dimen/size_sp_16" />
+</com.e.common.widget.effect.layout.EffectColorLinearLayout>

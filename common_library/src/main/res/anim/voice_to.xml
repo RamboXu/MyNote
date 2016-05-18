@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:apk="http://schemas.android.com/apk/res/android" apk:oneshot="false">
+    <item apk:drawable="@drawable/chatto_voice_playing_f3" apk:duration="500" />
+    <item apk:drawable="@drawable/chatto_voice_playing_f1" apk:duration="500" />
+    <item apk:drawable="@drawable/chatto_voice_playing_f2" apk:duration="500" />
+</animation-list>

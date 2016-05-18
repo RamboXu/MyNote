@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ItemLayout">
+        <attr name="itemLayout_left1_text" format="reference|string" />
+        <attr name="itemLayout_left2_text" format="reference|string" />
+        <attr name="itemLayout_left3_text" format="reference|string" />
+        <attr name="itemLayout_right1_text" format="reference|string" />
+        <attr name="itemLayout_right2_text" format="reference|string" />
+        <attr name="itemLayout_left1_textSize" format="dimension" />
+        <attr name="itemLayout_left2_textSize" format="dimension" />
+        <attr name="itemLayout_left3_textSize" format="dimension" />
+        <attr name="itemLayout_right1_textSize" format="dimension" />
+        <attr name="itemLayout_right2_textSize" format="dimension" />
+        <attr name="itemLayout_left1_textColor" format="color|reference" />
+        <attr name="itemLayout_left2_textColor" format="color|reference" />
+        <attr name="itemLayout_left3_textColor" format="color|reference" />
+        <attr name="itemLayout_right1_textColor" format="color|reference" />
+        <attr name="itemLayout_right2_textColor" format="color|reference" />
+        <attr name="itemLayout_left1_textHint" format="reference|string" />
+        <attr name="itemLayout_left2_textHint" format="reference|string" />
+        <attr name="itemLayout_left3_textHint" format="reference|string" />
+        <attr name="itemLayout_right1_textHint" format="reference|string" />
+        <attr name="itemLayout_right2_textHint" format="reference|string" />
+        <attr name="itemLayout_need_arrow" format="boolean" />
+        <attr name="itemLayout_line_top" format="boolean" />
+        <attr name="itemLayout_line_bottom" format="boolean" />
+        <attr name="itemLayout_line_both" format="boolean" />
+        <attr name="itemLayout_line_height" format="dimension" />
+        <attr name="itemLayout_line_color" format="color|reference" />
+        <attr name="itemLayout_image_left_src" format="reference" />
+        <attr name="itemLayout_image_right_src" format="reference" />
+        <attr name="itemLayout_image_left_roundCorner" format="dimension"/>
+        <attr name="itemLayout_image_right_roundCorner" format="dimension"/>
+        <attr name="itemLayout_image_left_width" format="dimension" />
+        <attr name="itemLayout_image_left_height" format="dimension" />
+        <attr name="itemLayout_image_right_width" format="dimension" />
+        <attr name="itemLayout_image_right_height" format="dimension" />
+        <attr name="itemLayout_bottom_line_margin" format="dimension" />
+        <attr name="itemLayout_top_line_margin" format="dimension" />
+        <attr name="itemLayout_bottom_line_margin_right" format="dimension" />
+    </declare-styleable>
+
+</resources>

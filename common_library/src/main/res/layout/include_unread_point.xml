@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.e.common.widget.effect.button.EffectColorButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_dp_3"
+    android:gravity="center"
+    android:minHeight="@dimen/size_dp_20"
+    android:minWidth="@dimen/size_dp_20"
+    android:textColor="@color/white"
+    android:textSize="@dimen/size_sp_12"
+    android:textStyle="bold"
+    android:visibility="gone"
+    app:effectColor_bgNormalColor="#f04f1d"
+    app:effectColor_bgPressedColor="#f04f1d"
+    app:effectColor_clickable="false"
+    app:effectColor_radius="@dimen/size_dp_15" />

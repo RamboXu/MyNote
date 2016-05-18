@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="app_name" type="string" />
+
+    <item name="tag_filepath" type="id" />
+    <item name="tag_obj" type="id" />
+    <item name="tag_another_path" type="id" />
+    <item name="tag_obj1" type="id" />
+    <item name="tag_obj2" type="id" />
+    <item name="tag_obj_image_identity" type="id" />
+    <item name="tag_obj_viewholder" type="id" />
+
+    <item name="request_0" type="id" />
+    <item name="request_1" type="id" />
+    <item name="request_2" type="id" />
+    <item name="request_3" type="id" />
+    <item name="request_4" type="id" />
+    <item name="request_5" type="id" />
+    <item name="request_6" type="id" />
+    <item name="request_7" type="id" />
+    <item name="request_8" type="id" />
+    <item name="request_9" type="id" />
+    <item name="request_10" type="id" />
+    <item name="request_11" type="id" />
+    <item name="request_12" type="id" />
+    <item name="request_13" type="id" />
+    <item name="base_pullListView" type="id" />
+    <item name="view_temp_id" type="id" />
+    <item name="view_temp_id_1" type="id" />
+    <item name="view_temp_id_2" type="id" />
+    <item name="view_temp_id_3" type="id" />
+    <item name="notification_delete_request_code" type="id" />
+
+    <item name="default_banner_empty" type="drawable" />
+
+</resources>

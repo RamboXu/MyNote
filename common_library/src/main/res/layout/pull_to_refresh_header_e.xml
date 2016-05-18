@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/pull_to_refresh_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/size_dp_8"
+        android:paddingTop="@dimen/size_dp_8">
+
+        <RelativeLayout
+            android:id="@+id/ll_prepare_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.e.common.widget.image.ImageLoaderView
+                android:id="@+id/pull_to_refresh_header_drawable"
+                android:layout_width="@dimen/size_dp_50"
+                android:layout_height="@dimen/size_dp_50"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/loading" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pull_to_refresh_header_drawable_animation"
+            android:layout_width="@dimen/size_dp_28"
+            android:layout_height="@dimen/size_dp_28"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/size_dp_10"
+            android:indeterminateDrawable="@drawable/progressbarstyle"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/text_pull_to_refresh_header_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pull_to_refresh_header_drawable_animation"
+            android:layout_centerHorizontal="true"
+            android:text="@string/pull_to_refresh_header_hint_normal"
+            android:layout_marginTop="@dimen/size_dp_3"
+            android:textColor="@color/c_999"
+            android:textSize="@dimen/size_sp_15" />
+    </RelativeLayout>
+
+</LinearLayout>

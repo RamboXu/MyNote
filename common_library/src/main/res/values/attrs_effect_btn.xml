@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EffectColorBtn">
+        <attr name="effectColor_bgNormalColor" format="color|reference" />
+        <attr name="effectColor_bgPressedColor" format="color|reference" />
+        <attr name="effectColor_textNormalColor" format="color|reference" />
+        <attr name="effectColor_textPressedColor" format="color|reference" />
+        <attr name="effectColor_radius" format="dimension" />
+        <attr name="effectColor_clickable" format="boolean" />
+        <attr name="effectColor_checked" format="boolean" />
+
+        <attr name="effectColor_radius_spec_left_top" format="boolean"/>
+        <attr name="effectColor_radius_spec_left_bottom" format="boolean"/>
+        <attr name="effectColor_radius_spec_right_top" format="boolean"/>
+        <attr name="effectColor_radius_spec_right_bottom" format="boolean"/>
+        <attr name="effectColor_is_border" format="boolean"/>
+        <attr name="effectColor_is_border_left" format="boolean"/>
+        <attr name="effectColor_is_border_right" format="boolean"/>
+        <attr name="effectColor_is_border_top" format="boolean"/>
+        <attr name="effectColor_is_border_bottom" format="boolean"/>
+        <attr name="effectColor_is_just_border" format="boolean"/>
+        <attr name="effectColor_border_stroke" format="dimension"/>
+        <attr name="effectColor_is_press_status" format="boolean"/>
+
+        <attr name="effectImage_normal" format="reference"/>
+        <attr name="effectImage_pressed" format="reference"/>
+        <attr name="effectImage_background_normal" format="reference"/>
+        <attr name="effectImage_background_pressed" format="reference"/>
+        <attr name="effectImage_shadow_radius" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="EffectImageBtn">
+        <attr name="effectImage_pressedColor" format="color|reference" />
+    </declare-styleable>
+
+</resources>

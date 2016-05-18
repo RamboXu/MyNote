@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="ActivityStatusBarTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimaryDark">#471c47</item>
+    </style>
+
+</resources>

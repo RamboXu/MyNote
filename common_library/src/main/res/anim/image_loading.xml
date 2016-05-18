@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:apk="http://schemas.android.com/apk/res/android" apk:oneshot="false">
+<item apk:drawable="@drawable/qb_tenpay_loading_1" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_2" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_3" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_4" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_5" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_6" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_7" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_8" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_9" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_10" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_11" apk:duration="100" />
+<item apk:drawable="@drawable/qb_tenpay_loading_12" apk:duration="100" />
+</animation-list>

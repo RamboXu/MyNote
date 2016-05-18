@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/include_wheel_header_btns" />
+
+    <LinearLayout
+        android:id="@+id/ll_wheelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.e.common.widget.wheel.WheelView
+            android:id="@+id/wheelView_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:wheel_textColor="@color/c_474747" />
+
+        <com.e.common.widget.wheel.WheelView
+            android:id="@+id/wheelView_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:wheel_textColor="@color/c_474747" />
+
+        <com.e.common.widget.wheel.WheelView
+            android:id="@+id/wheelView_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            app:wheel_textColor="@color/c_474747" />
+    </LinearLayout>
+
+
+</RelativeLayout>
